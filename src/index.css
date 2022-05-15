@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task {
+  height: 10vh;
+  width: 100vw;
+  border: 2px solid blue;
+}
+
+.add-task form {
+  height: 100%;
+  width: 30%;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.add-task form input {
+  margin: 0px, 10px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-task form input[type="button"] :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(242, 250, 136);
+}
+
+.task-lists {
+  height: 90vh;
+  width: 100vw;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+}
+
+.task-lists .todo {
+  height: 100%;
+  width: 50vw;
+  background-color: azure;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.task-lists .finished {
+  height: 100%;
+  width: 50vw;
+  background-color: azure;
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.task-lists .list-container {
+  height: 70%;
+  width: 50%;
+  background-color: antiquewhite;
+  margin: 50px auto;
+  border-radius: 5px;
+  /* border: black 1px; */
+}
+
+.task-lists .list-container .title {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(5, 109, 122);
+
+  text-align: center;
+  font-size: 25px;
+  /* color: rgb(252, 252, 142); */
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+.tast-lists .list-container ul {
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+.task-lists .list-container ul li {
+  background-color: rgb(224, 120, 120);
+}
+
+.task-lists .list-container .content {
+  height: 90%;
+  width: 100%;
+  background-color: rgb(245, 196, 196);
+  font-size: 20px;
+  /* padding: 5px 10px; */
+  overflow-y: auto;
+}
+
+.task-lists .list-container .content div {
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: rgb(121, 223, 214);
+  /* border-bottom: 1px solid teal; */
+}
+
+.task-lists .list-container .content div span {
+  margin: 0px 20px;
+}
+
+.classHover:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.3);
+}
